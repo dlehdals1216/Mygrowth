@@ -8,6 +8,9 @@ const { indexRouter } = require("./src/Router/indexRouter");
 const { userRouter } = require("./src/Router//userRouter");
 // express 미들웨어 설정
 
+//정적파일 제공
+app.use(express.static("front"));
+
 // cors 설정
 app.use(cors());
 
